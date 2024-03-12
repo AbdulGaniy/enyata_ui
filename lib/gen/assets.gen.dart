@@ -495,6 +495,9 @@ class $LibAssetsIconsGen {
   /// File path: lib/assets/icons/splash_logo.svg
   String get splashLogo => 'lib/assets/icons/splash_logo.svg';
 
+  /// File path: lib/assets/icons/srex.svg
+  String get srex => 'lib/assets/icons/srex.svg';
+
   /// File path: lib/assets/icons/staff_availability.svg
   String get staffAvailability => 'lib/assets/icons/staff_availability.svg';
 
@@ -723,6 +726,7 @@ class $LibAssetsIconsGen {
         shoppingBag,
         sms,
         splashLogo,
+        srex,
         staffAvailability,
         staffClocking,
         successOverlayCheckmark,
