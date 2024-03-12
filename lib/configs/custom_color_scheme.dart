@@ -51,7 +51,7 @@ class CustomColorScheme {
   final Color activeGreen;
   final Color wildCard;
   final Color bottomNavColor;
-
+  final Color splashScreenBackground;
   CustomColorScheme._({
     required this.primary,
     required this.icon,
@@ -101,12 +101,14 @@ class CustomColorScheme {
     required this.activeGreen,
     required this.wildCard,
     required this.bottomNavColor,
+    required this.splashScreenBackground,
   });
 
   factory CustomColorScheme.light() => CustomColorScheme._(
         icon: Colors.black,
         recommendedFollowCardShadow: const Color(0xFF9C9C9C),
         displayName: const Color(0xFF3D3531),
+
         drawerSectionDivider: const Color(0xFFF7F7F7),
         textColor: const Color(0xFF16171D),
         feedEmpty: const Color(0xFFCBD5E1),
@@ -151,7 +153,8 @@ class CustomColorScheme {
         activeGreen: const Color(0xFF3CC13B),
         wildCard: const Color(0xFF034752),
         error: AppColors.errorColor,
-    bottomNavColor: const Color(0xFF6D6D6D)
+    bottomNavColor: const Color(0xFF6D6D6D),
+    splashScreenBackground: const Color(0xFF13293D),
       );
 
   // in case you want to use dark theme
@@ -203,6 +206,7 @@ class CustomColorScheme {
         error: AppColors.errorColor,
         activeGreen: const Color(0xFF3CC13B),
         wildCard: const Color(0xFF034752),
-      bottomNavColor: const Color(0xFF6D6D6D)
+      bottomNavColor: const Color(0xFF6D6D6D),
+    splashScreenBackground: const Color(0xFF13293D),
       );
 }
