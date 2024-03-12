@@ -167,6 +167,9 @@ class $LibAssetsIconsGen {
   /// File path: lib/assets/icons/circle_empty.svg
   String get circleEmpty => 'lib/assets/icons/circle_empty.svg';
 
+  /// File path: lib/assets/icons/city_road.svg
+  String get cityRoad => 'lib/assets/icons/city_road.svg';
+
   /// File path: lib/assets/icons/close.svg
   String get close => 'lib/assets/icons/close.svg';
 
@@ -495,6 +498,12 @@ class $LibAssetsIconsGen {
   /// File path: lib/assets/icons/splash_logo.svg
   String get splashLogo => 'lib/assets/icons/splash_logo.svg';
 
+  /// File path: lib/assets/icons/srex_logo.svg
+  String get srexLogo => 'lib/assets/icons/srex_logo.svg';
+
+  /// File path: lib/assets/icons/srex_white.svg
+  String get srexWhite => 'lib/assets/icons/srex_white.svg';
+
   /// File path: lib/assets/icons/staff_availability.svg
   String get staffAvailability => 'lib/assets/icons/staff_availability.svg';
 
@@ -614,6 +623,7 @@ class $LibAssetsIconsGen {
         caretDown,
         checked,
         circleEmpty,
+        cityRoad,
         close,
         closeCircle,
         congratulations,
@@ -723,6 +733,8 @@ class $LibAssetsIconsGen {
         shoppingBag,
         sms,
         splashLogo,
+        srexLogo,
+        srexWhite,
         staffAvailability,
         staffClocking,
         successOverlayCheckmark,
