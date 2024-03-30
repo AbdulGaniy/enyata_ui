@@ -498,11 +498,16 @@ class $LibAssetsIconsGen {
   /// File path: lib/assets/icons/splash_logo.svg
   String get splashLogo => 'lib/assets/icons/splash_logo.svg';
 
+<<<<<<< HEAD
+  /// File path: lib/assets/icons/srex.svg
+  String get srex => 'lib/assets/icons/srex.svg';
+=======
   /// File path: lib/assets/icons/srex_logo.svg
   String get srexLogo => 'lib/assets/icons/srex_logo.svg';
 
   /// File path: lib/assets/icons/srex_white.svg
   String get srexWhite => 'lib/assets/icons/srex_white.svg';
+>>>>>>> df2054fe98e358e08b9881c6bae42d790c08a815
 
   /// File path: lib/assets/icons/staff_availability.svg
   String get staffAvailability => 'lib/assets/icons/staff_availability.svg';
@@ -733,8 +738,12 @@ class $LibAssetsIconsGen {
         shoppingBag,
         sms,
         splashLogo,
+<<<<<<< HEAD
+        srex,
+=======
         srexLogo,
         srexWhite,
+>>>>>>> df2054fe98e358e08b9881c6bae42d790c08a815
         staffAvailability,
         staffClocking,
         successOverlayCheckmark,

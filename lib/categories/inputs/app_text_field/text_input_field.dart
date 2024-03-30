@@ -242,6 +242,7 @@ class TextInputField extends StatelessWidget {
         ),
       );
     }
+
     if (_is(TextFieldType.username)) {
       return AnimatedContainer(
         curve: Curves.bounceIn,
@@ -271,6 +272,7 @@ class TextInputField extends StatelessWidget {
         ),
       );
     }
+  
 
     if (_is(TextFieldType.amount)) {
       return AnimatedContainer(
