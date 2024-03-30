@@ -805,17 +805,17 @@ class $LibAssetsImagesGen {
   AssetGenImage get onboardingLogo =>
       const AssetGenImage('lib/assets/images/onboarding_logo.png');
 
-  /// File path: lib/assets/images/onboardingone.png
-  AssetGenImage get onboardingone =>
-      const AssetGenImage('lib/assets/images/onboardingone.png');
+  /// File path: lib/assets/images/onboarding_one.png
+  AssetGenImage get onboardingOne =>
+      const AssetGenImage('lib/assets/images/onboarding_one.png');
 
-  /// File path: lib/assets/images/onboardingthree.png
-  AssetGenImage get onboardingthree =>
-      const AssetGenImage('lib/assets/images/onboardingthree.png');
+  /// File path: lib/assets/images/onboarding_three.png
+  AssetGenImage get onboardingThree =>
+      const AssetGenImage('lib/assets/images/onboarding_three.png');
 
-  /// File path: lib/assets/images/onboardingtwo.png
-  AssetGenImage get onboardingtwo =>
-      const AssetGenImage('lib/assets/images/onboardingtwo.png');
+  /// File path: lib/assets/images/onboarding_two.png
+  AssetGenImage get onboardingTwo =>
+      const AssetGenImage('lib/assets/images/onboarding_two.png');
 
   /// File path: lib/assets/images/welcome_image.png
   AssetGenImage get welcomeImage =>
@@ -833,9 +833,9 @@ class $LibAssetsImagesGen {
         necoLogoOne,
         onboarding,
         onboardingLogo,
-        onboardingone,
-        onboardingthree,
-        onboardingtwo,
+        onboardingOne,
+        onboardingThree,
+        onboardingTwo,
         welcomeImage
       ];
 }

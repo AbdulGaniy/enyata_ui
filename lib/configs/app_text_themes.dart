@@ -5,8 +5,7 @@ class _AppTextStyles {
   /// H1 => displayLarge
   static TextStyle h1({
     Color? color,
-  }) =>
-      TextStyle(
+  }) => TextStyle(
         color: color ?? AppColors.textBlack,
         fontSize: 40,
         fontWeight: FontWeight.w400,
