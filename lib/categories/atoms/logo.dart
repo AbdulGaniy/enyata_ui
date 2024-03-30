@@ -15,7 +15,7 @@ class AppLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SvgPicture.asset(
-      context.icons.necoLogo,
+      context.icons.srexLogo,
       package: 'ui_package',
       semanticsLabel: 'App Logo',
       alignment: Alignment.center,

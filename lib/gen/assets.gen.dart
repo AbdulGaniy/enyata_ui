@@ -492,22 +492,23 @@ class $LibAssetsIconsGen {
   /// File path: lib/assets/icons/shopping-bag.svg
   String get shoppingBag => 'lib/assets/icons/shopping-bag.svg';
 
+  /// File path: lib/assets/icons/shopping.svg
+  String get shopping => 'lib/assets/icons/shopping.svg';
+
   /// File path: lib/assets/icons/sms.svg
   String get sms => 'lib/assets/icons/sms.svg';
 
   /// File path: lib/assets/icons/splash_logo.svg
   String get splashLogo => 'lib/assets/icons/splash_logo.svg';
 
-<<<<<<< HEAD
   /// File path: lib/assets/icons/srex.svg
   String get srex => 'lib/assets/icons/srex.svg';
-=======
+
   /// File path: lib/assets/icons/srex_logo.svg
   String get srexLogo => 'lib/assets/icons/srex_logo.svg';
 
   /// File path: lib/assets/icons/srex_white.svg
   String get srexWhite => 'lib/assets/icons/srex_white.svg';
->>>>>>> df2054fe98e358e08b9881c6bae42d790c08a815
 
   /// File path: lib/assets/icons/staff_availability.svg
   String get staffAvailability => 'lib/assets/icons/staff_availability.svg';
@@ -736,14 +737,12 @@ class $LibAssetsIconsGen {
         settingsActive,
         shiftScheduling,
         shoppingBag,
+        shopping,
         sms,
         splashLogo,
-<<<<<<< HEAD
         srex,
-=======
         srexLogo,
         srexWhite,
->>>>>>> df2054fe98e358e08b9881c6bae42d790c08a815
         staffAvailability,
         staffClocking,
         successOverlayCheckmark,
@@ -826,6 +825,10 @@ class $LibAssetsImagesGen {
   AssetGenImage get onboardingTwo =>
       const AssetGenImage('lib/assets/images/onboarding_two.png');
 
+  /// File path: lib/assets/images/shopping1.png
+  AssetGenImage get shopping1 =>
+      const AssetGenImage('lib/assets/images/shopping1.png');
+
   /// File path: lib/assets/images/welcome_image.png
   AssetGenImage get welcomeImage =>
       const AssetGenImage('lib/assets/images/welcome_image.png');
@@ -845,6 +848,7 @@ class $LibAssetsImagesGen {
         onboardingOne,
         onboardingThree,
         onboardingTwo,
+        shopping1,
         welcomeImage
       ];
 }
