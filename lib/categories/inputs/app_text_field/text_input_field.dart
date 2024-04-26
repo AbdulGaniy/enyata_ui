@@ -126,7 +126,7 @@ class TextInputField extends StatelessWidget {
                             color:
                                 context.colorScheme.onSurface.withOpacity(0.3),
                           ),
-                          prefix: _buildPrefixIcon(context),
+                         // prefix: _buildPrefixIcon(context),
                           suffix: _buildSuffix(context, showPassword),
                           contentPadding: const EdgeInsets.all(20),
                         ),
@@ -185,110 +185,110 @@ class TextInputField extends StatelessWidget {
         child: suffix,
       );
     }
-    if (_is(TextFieldType.password)) {
-      return GestureDetector(
-        onTap: textController.toggleShowPassword,
-        child: AnimatedContainer(
-          curve: Curves.bounceIn,
-          duration: const Duration(milliseconds: 1),
-          padding: const EdgeInsets.only(left: 15),
-          child: AppSvgIcon(
-            showPassword ? context.icons.eyeClose : context.icons.eyeOpen,
-            color: context.colorScheme.onSurface.withOpacity(0.5),
-          ),
-        ),
-      );
-    }
-    if (_is(TextFieldType.menu) || _is(TextFieldType.gender)) {
-      return GestureDetector(
-        onTap: () {
-          // get the current widget global position
-          final RenderBox? renderBox = context.findRenderObject() as RenderBox?;
-          final offset = renderBox?.localToGlobal(Offset.zero);
-          handleMenuTap?.call(offset!);
-        },
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 1),
-          padding: const EdgeInsets.only(left: 15),
-          child: AppSvgIcon(
-            context.icons.caretDown,
-            color: context.colorScheme.onSurface.withOpacity(0.5),
-          ),
-        ),
-      );
-    }
+    // if (_is(TextFieldType.password)) {
+    //   return GestureDetector(
+    //     onTap: textController.toggleShowPassword,
+    //     child: AnimatedContainer(
+    //       curve: Curves.bounceIn,
+    //       duration: const Duration(milliseconds: 1),
+    //       padding: const EdgeInsets.only(left: 15),
+    //       child: AppSvgIcon(
+    //         showPassword ? context.icons.eyeClose : context.icons.eyeOpen,
+    //         color: context.colorScheme.onSurface.withOpacity(0.5),
+    //       ),
+    //     ),
+    //   );
+    // }
+    // if (_is(TextFieldType.menu) || _is(TextFieldType.gender)) {
+    //   return GestureDetector(
+    //     onTap: () {
+    //       // get the current widget global position
+    //       final RenderBox? renderBox = context.findRenderObject() as RenderBox?;
+    //       final offset = renderBox?.localToGlobal(Offset.zero);
+    //       handleMenuTap?.call(offset!);
+    //     },
+    //     child: AnimatedContainer(
+    //       duration: const Duration(milliseconds: 1),
+    //       padding: const EdgeInsets.only(left: 15),
+    //       child: AppSvgIcon(
+    //         context.icons.caretDown,
+    //         color: context.colorScheme.onSurface.withOpacity(0.5),
+    //       ),
+    //     ),
+    //   );
+    // }
 
     return const SizedBox.shrink();
   }
 
-  Widget _buildPrefixIcon(BuildContext context) {
-    if (prefix != null) {
-      return AnimatedContainer(
-        curve: Curves.bounceIn,
-        duration: const Duration(milliseconds: 1),
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-        child: prefix,
-      );
-    }
-    if (_is(TextFieldType.gender)) {
-      return AnimatedContainer(
-        curve: Curves.bounceIn,
-        duration: const Duration(milliseconds: 1),
-        padding: const EdgeInsets.only(right: 15),
-        margin: const EdgeInsets.only(top: 5),
-        child: AppSvgIcon(
-          context.icons.outlineUser,
-          color: context.colorScheme.onSurface.withOpacity(0.5),
-        ),
-      );
-    }
-
-    if (_is(TextFieldType.username)) {
-      return AnimatedContainer(
-        curve: Curves.bounceIn,
-        duration: const Duration(milliseconds: 1),
-        padding: const EdgeInsets.only(right: 15),
-        margin: const EdgeInsets.only(top: 5),
-        child: AppText(
-          params: AppTextParams(
-            text: '@',
-            textStyle: AppTextStyles.bodySmall,
-            color: context.colorScheme.onSurface.withOpacity(0.5),
-          ),
-        ),
-      );
-    }
-
-    if (_is(TextFieldType.search)) {
-      return AnimatedContainer(
-        curve: Curves.bounceIn,
-        duration: const Duration(milliseconds: 1),
-        padding: const EdgeInsets.only(
-          right: 15,
-        ),
-        child: AppSvgIcon(
-          context.icons.search,
-          color: context.colorScheme.onSurface.withOpacity(0.5),
-        ),
-      );
-    }
-  
-
-    if (_is(TextFieldType.amount)) {
-      return AnimatedContainer(
-        duration: const Duration(milliseconds: 1),
-        padding: const EdgeInsets.only(right: 15),
-        child: Text(
-          'NGN',
-          style: context.textTheme.bodyLarge?.copyWith(
-            color: context.colorScheme.onSurface.withOpacity(0.5),
-          ),
-        ),
-      );
-    }
-
-    return const SizedBox.shrink();
-  }
+  // Widget _buildPrefixIcon(BuildContext context) {
+  //   if (prefix != null) {
+  //     return AnimatedContainer(
+  //       curve: Curves.bounceIn,
+  //       duration: const Duration(milliseconds: 1),
+  //       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+  //       child: prefix,
+  //     );
+  //   }
+  //   if (_is(TextFieldType.gender)) {
+  //     return AnimatedContainer(
+  //       curve: Curves.bounceIn,
+  //       duration: const Duration(milliseconds: 1),
+  //       padding: const EdgeInsets.only(right: 15),
+  //       margin: const EdgeInsets.only(top: 5),
+  //       child: AppSvgIcon(
+  //         context.icons.outlineUser,
+  //         color: context.colorScheme.onSurface.withOpacity(0.5),
+  //       ),
+  //     );
+  //   }
+  //
+  //   if (_is(TextFieldType.username)) {
+  //     return AnimatedContainer(
+  //       curve: Curves.bounceIn,
+  //       duration: const Duration(milliseconds: 1),
+  //       padding: const EdgeInsets.only(right: 15),
+  //       margin: const EdgeInsets.only(top: 5),
+  //       child: AppText(
+  //         params: AppTextParams(
+  //           text: '@',
+  //           textStyle: AppTextStyles.bodySmall,
+  //           color: context.colorScheme.onSurface.withOpacity(0.5),
+  //         ),
+  //       ),
+  //     );
+  //   }
+  //
+  //   if (_is(TextFieldType.search)) {
+  //     return AnimatedContainer(
+  //       curve: Curves.bounceIn,
+  //       duration: const Duration(milliseconds: 1),
+  //       padding: const EdgeInsets.only(
+  //         right: 15,
+  //       ),
+  //       child: AppSvgIcon(
+  //         context.icons.search,
+  //         color: context.colorScheme.onSurface.withOpacity(0.5),
+  //       ),
+  //     );
+  //   }
+  //
+  //
+  //   if (_is(TextFieldType.amount)) {
+  //     return AnimatedContainer(
+  //       duration: const Duration(milliseconds: 1),
+  //       padding: const EdgeInsets.only(right: 15),
+  //       child: Text(
+  //         'NGN',
+  //         style: context.textTheme.bodyLarge?.copyWith(
+  //           color: context.colorScheme.onSurface.withOpacity(0.5),
+  //         ),
+  //       ),
+  //     );
+  //   }
+  //
+  //   return const SizedBox.shrink();
+  // }
 
   void _startFocusNodeListener() {
     textController.focusNode.addListener(() {

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_package/configs/_config.dart';
-
+import 'package:ui_package/configs/extensions.dart';
 
 class AppDivider extends StatelessWidget {
   final double height;
